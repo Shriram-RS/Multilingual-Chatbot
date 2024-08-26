@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coal India</title>
+</head>
+<body>
+<style>
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #ffffff;}
+</style>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+        "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+          subtitle:'Ministry of Coal',
+          initPayload:'/language',
+          title: 'Coal India',
+          inputTextFieldHint:"Ask here!",
+          profileAvatar: "./assets/icon.png",
+          openLauncherImage: "./assets/icon.png",
+          showFullScreenButton:true,
+          showMessageDate:true,
+          userBackgroundColor: "#D2412D",
+          userTextColor: "white",
+          mainColor: " #D2412D",
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+localStorage.clear();
+</script>
+</body>
+</html>
