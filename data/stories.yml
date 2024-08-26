@@ -1,0 +1,129 @@
+version: "3.1"
+
+stories:
+
+- story: start
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+
+- story: general
+  steps:
+  - intent: general
+  - action: utter_General
+  - intent: general1
+  - action: utter_General1
+
+- story: general
+  steps:
+  - intent: generalh
+  - action: utter_Generalh
+  - intent: general1h
+  - action: utter_General1h
+
+- story: general
+  steps:
+  - intent: generalt
+  - action: utter_Generalt
+  - intent: general1t
+  - action: utter_General1t
+
+- story: general
+  steps:
+  - intent: general
+  - action: utter_General
+  - intent: general2
+  - action: utter_General2
+
+- story: general
+  steps:
+  - intent: general
+  - action: utter_General
+  - intent: general3
+  - action: utter_General3
+
+- story: obtain
+  steps:
+  - intent: obtain
+  - action: utter_Obtain
+  - intent: obtain1
+  - action: utter_Obtain1
+
+- story: obtain
+  steps:
+  - intent: obtain
+  - action: utter_Obtain
+  - intent: obtain2
+  - action: utter_Obtain2
+
+- story: reconnaissance
+  steps:
+  - intent: reconnaissance
+  - action: utter_Reconnaissance
+  - intent: reconnaissance1
+  - action: utter_Reconnaissance1
+
+- story: reconnaissance
+  steps:
+  - intent: reconnaissance
+  - action: utter_Reconnaissance
+  - intent: reconnaissance2
+  - action: utter_Reconnaissance2
+
+- story: reconnaissance
+  steps:
+  - intent: reconnaissance
+  - action: utter_Reconnaissance
+  - intent: reconnaissance3
+  - action: utter_Reconnaissance3
+
+- story: reconnaissance
+  steps:
+  - intent: reconnaissance
+  - action: utter_Reconnaissance
+  - intent: reconnaissance4
+  - action: utter_Reconnaissance4
+
+- story: miscellaneous
+  steps:
+  - intent: miscellaneous
+  - action: utter_Miscellaneous
+  - action: utter_did_that_help
+
+- story: faq
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- story: faqh
+  steps:
+  - intent: faqh
+  - action: utter_faqh
+
+- story: faqt
+  steps:
+  - intent: faqt
+  - action: utter_faqt
+
+- story: act
+  steps:
+  - intent: acts
+  - action: utter_acts
+
+- story: Happy
+  steps:
+  - intent: affirm
+  - action: utter_happy
+  - action: action_save_conversation
+
+- story: Language
+  steps:
+  - intent: language
+  - action: utter_lang
+
+
+
+
+
+

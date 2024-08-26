@@ -1,0 +1,356 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - acts
+  - language
+  - faq
+  - faqh
+  - faqt
+  - back
+  - general
+  - generalh
+  - generalt
+  - general1
+  - general1h
+  - general1t
+  - general2
+  - general3
+  - general4
+  - general5
+  - general6
+  - general7
+  - general8
+  - obtain
+  - obtain1
+  - obtain2
+  - reconnaissance
+  - reconnaissance1
+  - reconnaissance2
+  - reconnaissance3
+  - reconnaissance4
+  - miscellaneous
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+    buttons:
+      - title: "Yes"
+
+        payload: "/affirm"
+      - title: "No"
+        payload: "/deny"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_acts:
+    - text: "
+1. The Mines and Minerals (Regulation and Development) Amendment Act
+2. The Repealing and Amending Act
+3. The Mines and Minerals (Regulation and Development) Amendment Act
+4. The Repealing and Amending Act
+5. The Mines and Minerals (Regulation and Development) Amendment Act
+6. The Mines and Minerals (Regulation and Development) Amendment Act
+7. The Mines and Minerals (Regulation and Development) Amendment Act
+8. The Mines and Minerals (Regulation and Development) Amendment Act \n
+
+Please refer this link for more Acts: https://ismenvis.nic.in/Database/Standards_Rules_Regulations_6425.aspx"
+
+
+  utter_lang:
+    - text: "Greetings!\n
+    
+    Please select preferred language:"
+      buttons:
+        - title: "English"
+          payload: "/faq"
+        - title: "हिंदी"
+          payload: "/faqh"
+        - title: "தமிழ்"
+          payload: "/faqt"
+
+  utter_faq:
+    - text: "Greetings!\n
+    
+    These are the Frequently Asked Questions:"
+      buttons:
+        - title: "General Rules and Restrictions"
+          payload: "/general"
+        - title: "Procedure for Obtaining License"
+          payload: "/obtain"
+        - title: "Grant of Reconnaissance Permits"
+          payload: "/reconnaissance"
+        - title: "Miscellaneous"
+          payload: "/miscellaneous"
+
+  utter_faqh:
+    - text: "अभिवादन!\n 
+    
+    ये अक्सर पूछे जाने वाले प्रश्न हैं:"
+      buttons:
+        - title: "सामान्य नियम और प्रतिबंध"
+          payload: "/generalh"
+        - title: "लाइसेंस प्राप्त करने की प्रक्रिया"
+          payload: "/obtain"
+        - title: "टोही परमिट का अनुदान"
+          payload: "/reconnaissance"
+        - title: "मिश्रित"
+          payload: "/miscellaneous"
+
+  utter_faqt:
+    - text: "வணக்கம்!\n 
+    
+    இவை அடிக்கடி கேட்கப்படும் கேள்விகள்:"
+      buttons:
+        - title: "பொது விதிகள் மற்றும் கட்டுப்பாடுகள்"
+          payload: "/generalt"
+        - title: "உரிமம் பெறுவதற்கான நடைமுறை"
+          payload: "/obtain"
+        - title: "உளவுத்துறை அனுமதிகளை வழங்குதல்"
+          payload: "/reconnaissance"
+        - title: "இதர விதிகள்"
+          payload: "/miscellaneous"
+
+  utter_General:
+    - text: "Select any specific rule:"
+      buttons:
+        - title: "Prospecting or mining operations to be under licence or lease"
+          payload: "/general1"
+        - title: "Termination of prospecting licences or mining leases"
+          payload: "/general2"
+        - title: "Restrictions on the grant of prospecting licences or mining leases"
+          payload: "/general3"
+        - title: "Maximum area for which a prospecting licence or mining lease may be granted "
+          payload: "/general4"
+        - title: "Periods for which prospecting licences may be granted or renewed "
+          payload: "/general5"
+        - title: "Periods for which mining leases may be granted or renewed"
+          payload: "/general6"
+        - title: "Royalties in respect of mining leases"
+          payload: "/general7"
+        - title: "Dead rent to be paid by the lessee"
+          payload: "general8"
+        - title: "Back to FAQ"
+          payload: "/faq"
+
+  utter_Generalh:
+    - text: "कोई विशिष्ट नियम चुनें:"
+      buttons:
+        - title: "पूर्वेक्षण या खनन कार्य लाइसेंस या पट्टे के अधीन होना"
+          payload: "/general1h"
+        - title: "पूर्वेक्षण लाइसेंस या खनन पट्टों की समाप्ति"
+          payload: "/general2"
+        - title: "पूर्वेक्षण लाइसेंस या खनन पट्टे देने पर प्रतिबंध"
+          payload: "/general3"
+        - title: "अधिकतम क्षेत्र जिसके लिए पूर्वेक्षण लाइसेंस या खनन पट्टा प्रदान किया जा सकता है "
+          payload: "/general4"
+        - title: "वह अवधि जिसके लिए पूर्वेक्षण लाइसेंस दिए या नवीनीकृत किए जा सकते हैं "
+          payload: "/general5"
+        - title: "वह अवधि जिसके लिए खनन पट्टे दिए या नवीनीकृत किए जा सकते हैं"
+          payload: "/general6"
+        - title: "खनन पट्टों के संबंध में रॉयल्टी"
+          payload: "/general7"
+        - title: "पट्टेदार द्वारा भुगतान किया जाने वाला अनिवार्य किराया"
+          payload: "general8"
+        - title: "अक्सर पूछे जाने वाले प्रश्न पर वापस जाएँ"
+          payload: "/faqh"
+
+  utter_Generalt:
+    - text: "ஏதேனும் குறிப்பிட்ட விதியைத் தேர்ந்தெடுக்கவும்:"
+      buttons:
+        - title: "உரிமம் அல்லது குத்தகையின் கீழ் இருக்க வேண்டும்"
+          payload: "/general1t"
+        - title: "உரிமங்கள் அல்லது சுரங்க குத்தகைகளை நிறுத்துதல்"
+          payload: "/general2"
+        - title: "வருங்கால உரிமங்கள் அல்லது சுரங்க குத்தகைகளை வழங்குவதற்கான கட்டுப்பாடுகள்"
+          payload: "/general3"
+        - title: "வருங்கால உரிமம் அல்லது சுரங்க குத்தகை வழங்கப்படக்கூடிய அதிகபட்ச பகுதி"
+          payload: "/general4"
+        - title: "வருங்கால உரிமங்கள் வழங்கப்படும் அல்லது புதுப்பிக்கப்படும் காலங்கள்"
+          payload: "/general5"
+        - title: "சுரங்க குத்தகைகள் வழங்கப்படும் அல்லது புதுப்பிக்கப்படும் காலங்கள்"
+          payload: "/general6"
+        - title: "சுரங்க குத்தகைகள் தொடர்பான ராயல்டிகள்"
+          payload: "/general7"
+        - title: "குத்தகைதாரர் செலுத்த வேண்டிய இறந்த வாடகை"
+          payload: "general8"
+        - title: "அடிக்கடி கேட்கப்படும் கேள்விகளுக்குத் திரும்பு"
+          payload: "/faqt"
+
+
+  utter_General1:
+     - text: "1. No person shall transport or store or cause to be transported or stored any mineral otherwise than in accordance with the provisions of this Act and the rules made there under.\n
+     
+2. No reconnaissance permit, prospecting licence or mining lease] shall be granted otherwise than in accordance with the provisions of this Act and the rules made thereunder.\n
+
+3. Any State Government may, after prior consultation with the Central Government and in accordance with the rules made under Section 18, 5[ undertake reconnaissance, prospecting or mining operations with respect to any mineral specified in the First Schedule in any area within that State which is not already held under any reconnaissance permit, prospecting licence or mining lease."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/general"
+
+  utter_General1h:
+     - text: "1. कोई भी व्यक्ति इस अधिनियम के प्रावधानों और इसके तहत बनाए गए नियमों के अनुसार अन्यथा किसी खनिज का परिवहन या भंडारण नहीं करेगा या परिवहन नहीं कराएगा।\n
+     
+2. कोई भी टोही परमिट, पूर्वेक्षण लाइसेंस या खनन पट्टा इस अधिनियम के प्रावधानों और इसके तहत बनाए गए नियमों के अनुसार अन्यथा प्रदान नहीं किया जाएगा।\n
+
+3. कोई भी राज्य सरकार, केंद्र सरकार से पूर्व परामर्श के बाद और धारा 18,5 के तहत बनाए गए नियमों के अनुसार, उस राज्य के भीतर किसी भी क्षेत्र में पहली अनुसूची में निर्दिष्ट किसी भी खनिज के संबंध में टोही, पूर्वेक्षण या खनन कार्य कर सकती है। पहले से ही किसी टोही परमिट, पूर्वेक्षण लाइसेंस या खनन पट्टे के तहत नहीं रखा गया है।"
+       buttons:
+         - title: "पिछले मेनू पर वापस जाएँ"
+           payload: "/generalh"
+
+  utter_General1t:
+     - text: "1. இந்தச் சட்டத்தின் விதிகள் மற்றும் அதன் கீழ் உருவாக்கப்பட்ட விதிகளின்படி அல்லாமல், எந்த ஒரு நபரும் எந்த ஒரு கனிமத்தையும் கொண்டு செல்லவோ, சேமிக்கவோ, கொண்டு செல்லவோ அல்லது சேமித்து வைக்கவோ கூடாது\n
+     
+2. இந்தச் சட்டத்தின் விதிகள் மற்றும் அதன் கீழ் உருவாக்கப்பட்ட விதிகளின்படி அல்லாமல், உளவு அனுமதி, உளவு உரிமம் அல்லது சுரங்க குத்தகை] வழங்கப்படாது.\n
+
+3. எந்தவொரு மாநில அரசாங்கமும், மத்திய அரசாங்கத்துடன் முன் ஆலோசனைக்குப் பிறகு மற்றும் பிரிவு 18, 5 [இன் கீழ் உருவாக்கப்பட்ட விதிகளின்படி, முதல் அட்டவணையில் குறிப்பிடப்பட்டுள்ள எந்தவொரு கனிமத்தையும் அந்த மாநிலத்திற்குள் உள்ள எந்தப் பகுதியிலும் உளவு, ஆய்வு அல்லது சுரங்க நடவடிக்கைகளை மேற்கொள்ளலாம். ஏற்கனவே உளவு அனுமதி, உரிமம் அல்லது சுரங்க குத்தகை ஆகியவற்றின் கீழ் நடத்தப்படவில்லை."
+       buttons:
+         - title: "முந்தைய மெனுவுக்குத் திரும்பு"
+           payload: "/generalt"
+
+
+  utter_General2:
+     - text: "1. Central Government, with State Government consultation, can prematurely terminate non-minor mineral licences or leases for purposes like environmental protection and public safety.\n
+
+2. State Governments can terminate minor mineral licences or leases in specific areas for reasons such as environmental preservation or regulation.\n
+
+3. License or lease termination must follow a fair hearing process.\n
+
+4. Mining leases lapse after two years of inactivity from execution or discontinuation of mining operations."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/general"
+
+  utter_General3:
+     - text: "1. A State Government shall not grant a reconnaissance permit, prospecting licence or mining lease to any person unless such person – is an Indian national, or a company as defined in sub-section (1) of Section 3 of the Companies Act, 1956\n
+
+2. No mining lease shall be granted by the State Government unless it is 
+ satisfied that - To obtain a mining lease, the State Government must verify the existence of prior prospecting or established mineral deposits in the proposed area and a mining plan, approved by either the Central or State Government (depending on the specified mine category), is required for the development of mineral deposits in the same area."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/general"
+
+
+  utter_Obtain:
+    - text: "Select any specific rule:"
+      buttons:
+        - title: "Application for prospecting licences or mining leases"
+          payload: "/obtain1"
+        - title: "Preferential right of certain persons "
+          payload: "/obtain2"
+        - title: "Granting of reconnaissance permit, prospecting licence or mining lease in respect of coal or lignite."
+          payload: "/general3"
+        - title: "Registers of reconnaissance permits, prospecting licences and mining leases"
+          payload: "/general4"
+        - title: "Back to FAQ"
+          payload: "/faq"
+
+  utter_Obtain1:
+     - text: "1. An application for 
+[a reconnaissance permit, prospecting licence or mining lease]
+in respect of any land in which the minerals vest in the Government shall be 
+made to the State Government concerned in the prescribed form and shall be 
+accompanied by the prescribed fee.\n
+ 
+2. Where an application is received under sub-section (1), there shall be sent 
+to the applicant an acknowledgement of its receipt within the prescribed time and 
+in the prescribed form.\n
+
+3. On receipt of an application under this section, the State Government may, 
+having regard to the provisions of this Act and any rules made thereunder, grant 
+or refuse to grant the permit, licence or lease."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/obtain"
+
+  utter_Obtain2:
+     - text: "1. Holders of reconnaissance permits or prospecting licenses are granted a preferential right to obtain a prospecting license or mining lease for the same land over any other individuals or entities. \n
+ 
+2. This preferential right is subject to certain conditions, which include:
+
+(a) Conducting reconnaissance or prospecting operations to establish mineral resources on the land.
+(b) Adherence to the terms and conditions stipulated in the reconnaissance permit or prospecting license.
+(c) Maintaining eligibility as per the provisions of the relevant mining laws and regulations.
+(d) Applying for a prospecting license or mining lease within three months after the expiry of the reconnaissance permit or prospecting license. An extension may be granted by the State Government if requested."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/obtain"
+
+
+  utter_Reconnaissance:
+    - text: "Select any specific rule:"
+      buttons:
+        - title: "Power of Central Government to make rules in respect of minerals"
+          payload: "/reconnaissance1"
+        - title: "Power of Central Government to make rules for the grant of prospecting licences"
+          payload: "/reconnaissance2"
+        - title: "Power of State Governments to make rules in respect of minor minerals"
+          payload: "/reconnaissance3"
+        - title: "Power to modify mining leases granted before 25th October, 1949 "
+          payload: "/reconnaissance4"
+        - title: "Back to FAQ"
+          payload: "/faq"
+
+  utter_Reconnaissance1:
+     - text: "The Central Government may, by notification in the Official Gazette, make rules 
+for regulating the grant of
+reconnaissance permits, prospecting licences and 
+mining leases in respect of minerals and for purposes connected therewith."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/reconnaissance"
+
+  utter_Reconnaissance2:
+     - text: "The Central Government may, by notification in the Official Gazette, make rules 
+for the grant of prospecting licences or mining leases in respect of any minerals 
+underlying the ocean within the territorial waters or the continental shelf of India."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/reconnaissance"
+
+  utter_Reconnaissance3:
+     - text: "The State Government may, by notification in the Official Gazette, make rules
+for regulating the grant of quarry leases, mining leases or other mineral 
+concessions in respect of minor minerals and for purposes connected therewith."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/reconnaissance"
+
+  utter_Reconnaissance4:
+     - text: "1. All mining leases granted before the commencement of the Mines and Minerals (Regulation and Development) Amendment Act, 1972 if in force at the date of commencement of the Mines and Minerals (Regulation and Development) Amendment Act, 1994 shall be brought in conformity with the provisions of this Act and the rules made thereunder within two years from the date of commencement of the Mines and Minerals (Regulation and Development) Amendment Act, 1994, or such further time as the Central Government may, by general or special order, specify in this behalf.\n 
+
+2. Where the rights under any mining lease, granted by the proprietor of an estate or tenure before the commencement of the Mines and Minerals 
+(Regulation and Development) Amendment Act, 1972, have vested, on or 
+after the 25th day of October, 1949, in the State Government in pursuance 
+of the provisions of any Act of any Provincial or State Legislature which 
+provides for the acquisition of estates or tenures or provides for agrarian 
+reform, such mining lease shall be brought into conformity with the 
+provisions of this Act and the rules made thereunder within two years 
+from the commencement of the Mines and Minerals (Regulation and 
+Development) Amendment Act, 1994 , or within such further time as the 
+Central Government may, by general or special order, specify in this 
+behalf."
+       buttons:
+         - title: "Back to Previous Menu"
+           payload: "/reconnaissance"
+
+  utter_Miscellaneous:
+    - text: "Here is the recent notice released by Coal India:"
+      image: "assets/notice.png"
+actions:
+  - action_save_conversation
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

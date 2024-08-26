@@ -1,0 +1,186 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - save
+    - Save
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: language
+  examples: |
+    - Lang
+    - Language
+
+- intent: faq
+  examples: |
+    - Faq
+    - FAQ
+    - frequently asked questions
+    - faq
+
+- intent: faqh
+  examples: |
+    - Faq hindi
+    - FAQ hindi
+    - frequently asked questions hindi
+    - faq hindi
+
+- intent: faqt
+  examples: |
+    - Faq tamil
+    - FAQ tamil
+    - frequently asked questions tamil
+    - faq tamil
+- intent: acts
+  examples: |
+    - acts
+    - mining acts
+    - mining acts in India
+    - Acts
+
+- intent: general
+  examples: |
+    - general
+    - General
+
+- intent: generalh
+  examples: |
+    - सामान्य
+
+- intent: generalt
+  examples: |
+    - பொது
+
+- intent: general1
+  examples: |
+    - general1
+    - General1
+
+- intent: general1h
+  examples: |
+    - general1h
+    - General1h
+
+- intent: general1t
+  examples: |
+    - general1t
+    - General1t
+
+- intent: general2
+  examples: |
+    - general2
+    - General2
+
+- intent: general3
+  examples: |
+    - general3
+    - General3
+
+- intent: general4
+  examples: |
+    - general4
+    - General4
+
+- intent: general5
+  examples: |
+    - general5
+    - General5
+
+- intent: general6
+  examples: |
+    - general6
+    - General6
+
+- intent: general7
+  examples: |
+    - general7
+    - General7
+
+- intent: general8
+  examples: |
+    - general8
+    - General8
+
+- intent: obtain
+  examples: |
+    - obtain
+    - Obtain
+
+- intent: obtain1
+  examples: |
+    - obtain1
+    - Obtain1
+
+- intent: obtain2
+  examples: |
+    - obtain2
+    - Obtain2
+
+- intent: reconnaissance
+  examples: |
+    - reconnaissance
+    - Reconnaissance
+
+- intent: reconnaissance1
+  examples: |
+    - reconnaissance1
+    - Reconnaissance1
+
+- intent: reconnaissance2
+  examples: |
+    - reconnaissance2
+    - Reconnaissance2
+
+- intent: reconnaissance3
+  examples: |
+    - reconnaissance3
+    - Reconnaissance3
+
+- intent: reconnaissance4
+  examples: |
+    - reconnaissance4
+    - Reconnaissance4
+
+- intent: miscellaneous
+  examples: |
+    - miscellaneous
+    - Miscellaneous

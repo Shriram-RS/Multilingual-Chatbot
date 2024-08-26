@@ -1,0 +1,14 @@
+intent,user_input,entity_name,entity_value,action,bot_reply
+language,/language,,,utter_lang,Greetings!
+
+Please select preferred language:
+faq,/faq,,,utter_faq,Greetings!
+
+These are the Frequently Asked Questions:
+general,/general,,,utter_General,Select any specific rule:
+general1,/general1,,,utter_General1,1. No person shall transport or store or cause to be transported or stored any mineral otherwise than in accordance with the provisions of this Act and the rules made there under.
+
+2. No reconnaissance permit, prospecting licence or mining lease] shall be granted otherwise than in accordance with the provisions of this Act and the rules made thereunder.
+
+3. Any State Government may, after prior consultation with the Central Government and in accordance with the rules made under Section 18, 5[ undertake reconnaissance, prospecting or mining operations with respect to any mineral specified in the First Schedule in any area within that State which is not already held under any reconnaissance permit, prospecting licence or mining lease.
+affirm,save,,,utter_happy,Great, carry on!
